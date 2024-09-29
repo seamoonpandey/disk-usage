@@ -1,0 +1,56 @@
+/**
+ * Program Name:	Address.java
+ * Purpose:			To demonstrate String input
+ * Coder:			Janice Manning
+ * Date:				Jan 20, 2017
+ */
+
+import java.util.Scanner;
+
+public class Address
+{
+	public static void main(String[] args)
+	{
+		//Create a Scanner object
+		Scanner input = new Scanner(System.in);
+		
+		//Declare variables
+		String fullName = "";
+		String streetAddress = "";
+		String city = "";
+		String province = "";
+		String postalCode = "";
+		
+		//1. Get user's full name
+		System.out.print("Enter your full name:\t\t");
+		fullName = input.nextLine();
+		
+		//2.  Get user's street address
+		System.out.print("Enter your street address:\t");
+		streetAddress = input.nextLine();
+		
+		//3.  Get user's city
+		System.out.print("Enter your city:\t\t");
+		city = input.next();
+		
+		//4.  Get user's province
+		System.out.print("Enter your province:\t\t");
+		province = input.next();
+		
+		//Flush the buffer
+		input.nextLine();
+		
+		//5.  Get user's postal code
+		System.out.print("Enter your postal code:\t\t");
+		postalCode = input.nextLine();
+		
+		//6.  Display user's mailing address to the console
+		System.out.println("\nHello, " + fullName + ". Here is your mailing address:");
+		System.out.println(streetAddress);
+		System.out.println(city + ", " + province);
+		System.out.println(postalCode);
+		
+		//Close the Scanner object
+		input.close();
+	}//End of main method
+}//End of class
