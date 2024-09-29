@@ -1,0 +1,44 @@
+/**
+ * Program Name:	AccountSetup.java
+ * Purpose:			To get a user's username and password (at least 8 characters)
+ * Coder:			Janice Manning
+ * Date:				Feb 27, 2017 
+ */
+
+import java.util.Scanner;
+
+public class AccountSetup
+{
+	public static void main(String[] args)
+	{
+		//Create a Scanner object
+		Scanner input = new Scanner(System.in);
+		
+		//Declare variables
+		String username = "";
+		String password = "";
+		
+		//Get the username
+		System.out.print("Enter your username: ");
+		username = input.next();
+		
+		//Get the user's password (test length is 8 characters)
+		do
+		{
+			System.out.print("Enter your password (8 characters):  ");
+			password = input.next();
+		}
+		while(password.length() < 8);
+		
+		//Convert case
+		username = username.toUpperCase();
+		password = password.toLowerCase();
+		
+		//Output username and password
+		System.out.println("Your username is " + username);
+		System.out.println("Your password is " + password);
+		
+		//Close the Scanner object
+		input.close();
+	}//End of main method
+}//End of class

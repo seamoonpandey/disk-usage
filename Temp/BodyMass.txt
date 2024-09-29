@@ -1,0 +1,48 @@
+/**
+ * Program Name:	BodyMass.java
+ * Purpose:			To calculate a user's body mass index based on weight and height
+ * Coder:			Janice Manning, Student Number
+ * Date:				October, 2016
+ */
+
+import java.util.Scanner;
+
+public class BodyMass
+{
+	public static void main(String[] args)
+	{
+		//Declare Scanner object
+		Scanner input = new Scanner(System.in);
+		
+		//Declare variables
+		int weight = 0;
+		int height = 0;
+		double bmi = 0.0;
+		
+		//Declare constant
+		final double CONVERSION_FACTOR = 703;
+		
+		//Get user input
+		System.out.println("Body Mass Index Calculator:");
+		System.out.print("Weight in pounds?\t" );
+		weight = input.nextInt();
+		System.out.print("Height in inches?\t");
+		height = input.nextInt();
+		
+		//Calculate body mass
+		bmi = weight * CONVERSION_FACTOR / Math.pow(height, 2);
+		bmi = (int)((bmi + 0.05) * 10) / 10.0;
+		System.out.println("\nHere is your body mass index:\t" + bmi);
+				
+		//Check the user's bmi range and output a message
+		if(bmi < 18.5)
+			System.out.println("You are underweight");
+		else if (bmi < 26)
+			System.out.println("You are an optimal weight");
+		else
+			System.out.println("You are overweight");
+		
+		//Close Scanner object
+		input.close();
+	}//End of main method
+}//End of class

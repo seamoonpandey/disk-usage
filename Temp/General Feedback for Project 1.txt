@@ -1,0 +1,48 @@
+General Feedback for Project 1
+==============================
+
+1.  Project creation
+--------------------
+- Name the Project "trisolver", which will create trisolver.exe
+- Solution can be named "Project 1"
+- Set Project Properties to: C Language Standard to ISO C++20 Standard (/std:c++20)
+
+2.  Project submission
+----------------------
+- delete all debug and release directories using 'vsclean' a VS Solution utility, which will retain solution folders (see Projects folder for instructions and a link to the download)
+- close all files and collapse the project in VS Solution Explorer
+- set to Release mode for submission, based on the assumption all debugging is complete
+- ZIP the entire cleaned Visual Studio Solution, and then upload that zipped file
+
+3.  Warnings and runtime errors
+-------------------------------
+- correct all warnings before submission
+- correct all infinite loops before submission
+
+4. Input Validation
+-------------------
+- match the error message to the .exe for incorrect input
+
+5. Documentation and comments
+-----------------------------
+- provide file documentation (include Author Name, Due Date, Purpose, Version)
+- provide function documentation (see Projects folder for instructions)
+- inclusion of web resources is a good idea
+
+6. Testing the demo executable
+------------------------------
+- run the demo with input for the four triangle strings, which values are assigned to which properties? Match that assignment, then solve for remaining properties.
+
+7. Declaring variables and constants
+------------------------------------
+- use std::numbers:pi for PI constant
+- do not declare variables in Global namespace
+- Avoid declaring all variables at the top of a program or function (an intro Java practice), instead declare as needed in place.
+
+8. Code readability
+-------------------
+- reduce excess whitespace within your code
+- match braces for code constructs
+- delete any unused functions or variables
+- use meaningful variable names
+- delete any commented-out code blocks!
